@@ -4,3 +4,6 @@ E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.D
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\Ansible.Data.Model.dll
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\Ansible.Data.Model.pdb
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\Ansible.Data.Model.csprojAssemblyReference.cache
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\bin\Debug\Ansible.Core.dll
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\bin\Debug\Ansible.Core.pdb
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\Ansible.Data.Model.csproj.CopyComplete

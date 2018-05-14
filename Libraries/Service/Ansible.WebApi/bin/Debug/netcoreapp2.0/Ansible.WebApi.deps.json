@@ -3805,6 +3805,9 @@
         }
       },
       "Ansible.Data.Model/1.0.0": {
+        "dependencies": {
+          "Ansible.Core": "1.0.0"
+        },
         "runtime": {
           "Ansible.Data.Model.dll": {}
         },

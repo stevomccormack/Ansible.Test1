@@ -4758,6 +4758,9 @@
       },
       "Ansible.Data.Model/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "Ansible.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Ansible.Data.Model.dll": {}
         },

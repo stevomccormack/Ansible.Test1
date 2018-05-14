@@ -44,5 +44,11 @@
     <Compile Include="Vote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Ansible.Core\Ansible.Core.csproj">
+      <Project>{61b9b809-f8e3-4a72-bb56-73baa56d44bf}</Project>
+      <Name>Ansible.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

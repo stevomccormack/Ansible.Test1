@@ -9,6 +9,7 @@ namespace Ansible.Data.Model
 
         public Vote()
         {
+            VoteId = NewVoteId;
             VoteNumber = NewVoteNumber;
             CreatedBy = "sa";
             CreatedDateUtc = DateTime.UtcNow;
@@ -18,10 +19,10 @@ namespace Ansible.Data.Model
 
         #region Member Properties
 
-        //[Key]
+        [Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        //[Display(Name = "Vote Id")]
-        //public int VoteId { get; set; }
+        [Display(Name = "Vote Id")]
+        public int VoteId { get; set; }
 
         [Required]
         [Display(Name = "Vote Number")]
@@ -81,6 +82,8 @@ namespace Ansible.Data.Model
 
 
         #region Static Helpers
+
+        public static int NewVoteId => new Random().Next(1,1000);
 
         public static string NewVoteNumber => $"VOTE{Guid.NewGuid().ToString().GetHashCode():x}";
 

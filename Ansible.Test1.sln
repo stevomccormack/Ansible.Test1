@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.WebApi", "Libraries\Service\Ansible.WebApi\Ansible.WebApi.csproj", "{0F41BB14-6843-4CA8-AAC3-C256C26EC0E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services Layer", "Services Layer", "{78447B01-1103-4772-9C60-FAB07E887EE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Layer", "Data Layer", "{1AD53BAA-1434-4A43-BFF7-575DF456EF26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI Layer", "UI Layer", "{4F1865B4-B7D7-4B70-962D-E263A75CD1E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Layer", "Common Layer", "{6D391894-BEF8-40B0-BAAD-2105DDCEDE46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Data.Model", "Libraries\Entity\Ansible.Data.Model\Ansible.Data.Model.csproj", "{16828E90-4E47-4F83-81A8-9B285DA0B19A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Website.Admin", "Apps\Website\Ansible.Website.Admin\Ansible.Website.Admin.csproj", "{5AA30B00-8950-493F-8536-42B7C080AC30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Core", "Libraries\Core\Ansible.Core\Ansible.Core.csproj", "{61B9B809-F8E3-4A72-BB56-73BAA56D44BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing Layer", "Testing Layer", "{4150CA21-F1E2-4B59-8E7C-0F84A56A59C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F41BB14-6843-4CA8-AAC3-C256C26EC0E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F41BB14-6843-4CA8-AAC3-C256C26EC0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F41BB14-6843-4CA8-AAC3-C256C26EC0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F41BB14-6843-4CA8-AAC3-C256C26EC0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16828E90-4E47-4F83-81A8-9B285DA0B19A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16828E90-4E47-4F83-81A8-9B285DA0B19A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16828E90-4E47-4F83-81A8-9B285DA0B19A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16828E90-4E47-4F83-81A8-9B285DA0B19A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA30B00-8950-493F-8536-42B7C080AC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA30B00-8950-493F-8536-42B7C080AC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA30B00-8950-493F-8536-42B7C080AC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA30B00-8950-493F-8536-42B7C080AC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F41BB14-6843-4CA8-AAC3-C256C26EC0E3} = {78447B01-1103-4772-9C60-FAB07E887EE4}
+		{16828E90-4E47-4F83-81A8-9B285DA0B19A} = {1AD53BAA-1434-4A43-BFF7-575DF456EF26}
+		{5AA30B00-8950-493F-8536-42B7C080AC30} = {4F1865B4-B7D7-4B70-962D-E263A75CD1E8}
+		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF} = {6D391894-BEF8-40B0-BAAD-2105DDCEDE46}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C38B93E6-A61D-447A-8BD6-A8C71B321498}
+	EndGlobalSection
+EndGlobal

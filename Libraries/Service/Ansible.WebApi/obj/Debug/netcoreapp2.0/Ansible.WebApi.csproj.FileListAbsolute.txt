@@ -1,0 +1,16 @@
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.WebApi.deps.json
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.WebApi.runtimeconfig.json
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.WebApi.runtimeconfig.dev.json
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.WebApi.dll
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.WebApi.pdb
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\obj\Debug\netcoreapp2.0\Ansible.WebApi.csproj.CoreCompileInputs.cache
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\obj\Debug\netcoreapp2.0\Ansible.WebApi.AssemblyInfoInputs.cache
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\obj\Debug\netcoreapp2.0\Ansible.WebApi.AssemblyInfo.cs
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\obj\Debug\netcoreapp2.0\Ansible.WebApi.dll
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\obj\Debug\netcoreapp2.0\Ansible.WebApi.pdb
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.Core.dll
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.Data.Model.dll
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.Core.pdb
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.Data.Model.pdb
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\obj\Debug\netcoreapp2.0\Ansible.WebApi.csprojAssemblyReference.cache
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\obj\Debug\netcoreapp2.0\Ansible.WebApi.csproj.CopyComplete

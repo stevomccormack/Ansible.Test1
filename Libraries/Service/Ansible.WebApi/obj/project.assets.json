@@ -4756,6 +4756,19 @@
           "bin/placeholder/Ansible.Core.dll": {}
         }
       },
+      "Ansible.Data.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Ansible.Data.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ansible.Data.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ansible.Data.Entity.dll": {}
+        }
+      },
       "Ansible.Data.Model/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -12680,6 +12693,11 @@
       "path": "../../Core/Ansible.Core/Ansible.Core.csproj",
       "msbuildProject": "../../Core/Ansible.Core/Ansible.Core.csproj"
     },
+    "Ansible.Data.Entity/1.0.0": {
+      "type": "project",
+      "path": "../../Entity/Sands.Data.Entity/Ansible.Data.Entity.csproj",
+      "msbuildProject": "../../Entity/Sands.Data.Entity/Ansible.Data.Entity.csproj"
+    },
     "Ansible.Data.Model/1.0.0": {
       "type": "project",
       "path": "../../Entity/Ansible.Data.Model/Ansible.Data.Model.csproj",
@@ -12689,6 +12707,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Ansible.Core >= 1.0.0",
+      "Ansible.Data.Entity >= 1.0.0",
       "Ansible.Data.Model >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.8",
       "Microsoft.NETCore.App >= 2.0.0"
@@ -12729,6 +12748,9 @@
             },
             "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Model\\Ansible.Data.Model.csproj": {
               "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Model\\Ansible.Data.Model.csproj"
+            },
+            "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Sands.Data.Entity\\Ansible.Data.Entity.csproj": {
+              "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Sands.Data.Entity\\Ansible.Data.Entity.csproj"
             }
           }
         }

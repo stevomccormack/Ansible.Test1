@@ -14,3 +14,5 @@ E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.Data.Model.pdb
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\obj\Debug\netcoreapp2.0\Ansible.WebApi.csprojAssemblyReference.cache
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\obj\Debug\netcoreapp2.0\Ansible.WebApi.csproj.CopyComplete
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.Data.Entity.dll
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Service\Ansible.WebApi\bin\Debug\netcoreapp2.0\Ansible.Data.Entity.pdb

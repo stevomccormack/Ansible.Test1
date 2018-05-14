@@ -24,6 +24,7 @@
       "Ansible.WebApi/1.0.0": {
         "dependencies": {
           "Ansible.Core": "1.0.0",
+          "Ansible.Data.Entity": "1.0.0",
           "Ansible.Data.Model": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.8",
           "Microsoft.NETCore.App": "2.0.0"
@@ -3804,6 +3805,17 @@
           "Ansible.Core.dll": {}
         }
       },
+      "Ansible.Data.Entity/1.0.0": {
+        "dependencies": {
+          "Ansible.Data.Model": "1.0.0"
+        },
+        "runtime": {
+          "Ansible.Data.Entity.dll": {}
+        },
+        "compile": {
+          "Ansible.Data.Entity.dll": {}
+        }
+      },
       "Ansible.Data.Model/1.0.0": {
         "dependencies": {
           "Ansible.Core": "1.0.0"
@@ -6002,6 +6014,11 @@
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
     "Ansible.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ansible.Data.Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

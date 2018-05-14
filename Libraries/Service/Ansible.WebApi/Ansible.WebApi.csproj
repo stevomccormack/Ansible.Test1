@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Ansible.Core\Ansible.Core.csproj" />
     <ProjectReference Include="..\..\Entity\Ansible.Data.Model\Ansible.Data.Model.csproj" />
+    <ProjectReference Include="..\..\Entity\Sands.Data.Entity\Ansible.Data.Entity.csproj" />
   </ItemGroup>
 
 </Project>

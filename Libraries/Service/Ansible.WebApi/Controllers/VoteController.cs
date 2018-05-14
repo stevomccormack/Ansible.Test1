@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Ansible.Data.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Ansible.Data.Model;
 
 namespace Ansible.WebApi.Controllers
 {
-    [Route( "api/[controller]" )]
-    [Produces( "application/json" )]
+    [Route("api/[controller]")]
+    [Produces("application/json")]
     public class VoteController : ControllerBase
     {
-        //TOD: Mock DB or cache for persistency
+        private readonly AnsibleDbContext _context;
+
+        //TODO: data seed should be done in startup (using initaliaser utility)
         List<Vote> _votes = new List<Vote>
         {
             new Vote { VoteId = 1, GivenName = "Steve", Surname = "McCormack", Gender = "Male", Age = 42 },
@@ -19,47 +23,72 @@ namespace Ansible.WebApi.Controllers
             new Vote { VoteId = 4, GivenName = "Elle", Surname = "McPherson", Gender = "Female", Age = 50 }
         };
 
-        public VoteController()
+        public VoteController(AnsibleDbContext context)
         {
-            //TODO: repo
+            _context = context;
+
+            //TODO: data seed should be done in startup (using initaliaser utility)
+            if (!_context.Votes.Any())
+            {
+                _context.Votes.AddRange(_votes);
+                _context.SaveChanges();
+            }
         }
 
+        // GET api/vote
+        /// <summary>
+        /// Get all votes
+        /// </summary>
+        /// <returns>All votes with HTTP200(Success)</returns>
         [HttpGet]
-        [ProducesResponseType( typeof( IEnumerable<Vote> ), 200 )]
+        [ProducesResponseType(typeof(IEnumerable<Vote>), 200)]
         public IActionResult Get()
         {
-            return Ok( _votes );
+            var votes = _context.Votes.ToList();
+            return Ok(votes);
         }
 
-        [HttpGet( "{id}" )]
-        [ProducesResponseType( typeof( Vote ), 200 )]
-        [ProducesResponseType( 404 )]
-        public IActionResult Get( int id )
+        // GET api/vote/5
+        /// <summary>
+        /// Get vote by id
+        /// </summary>
+        /// <param name="id">vote id</param>
+        /// <returns>The specified <code>Vote</code> with HTTP200(Success), otherwise returns HTTP404 (NotFound)</returns>
+        [HttpGet("{id}")]
+        [ProducesResponseType(typeof(Vote), 200)]
+        [ProducesResponseType(404)]
+        public IActionResult Get(int id)
         {
-            var vote = _votes.FirstOrDefault( x => x.VoteId == id );
-            if( vote == null )
+            var vote = _context.Votes.FirstOrDefault(x => x.VoteId == id);
+            if (vote == null)
             {
                 return NotFound();
             }
 
-            return new ObjectResult( vote );
+            return new ObjectResult(vote);
         }
 
+        // POST api/vote
+        /// <summary>
+        /// Creates a new vote
+        /// </summary>
+        /// <param name="vote">vote to add</param>
+        /// <returns>HTTP200 for successful creation (includes location for get), otherwise returns HTTP400 (Bad Request)</returns>
         [HttpPost]
-        public IActionResult Post( [FromBody] Vote vote )
+        public IActionResult Post([FromBody] Vote vote)
         {
-            if( vote == null )
+            if (vote == null)
             {
                 return BadRequest();
             }
 
-            if( !ModelState.IsValid )
+            if (!ModelState.IsValid)
             {
-                return BadRequest( ModelState );
+                return BadRequest(ModelState);
             }
 
-            _votes.Add( vote );
-            return CreatedAtAction( "GetById", new { id = vote.VoteId }, vote );
+            _context.Votes.Add(vote);
+            return CreatedAtAction("GetById", new { id = vote.VoteId }, vote);
         }
     }
 }

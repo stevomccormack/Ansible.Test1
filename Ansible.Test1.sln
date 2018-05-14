@@ -15,13 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Layer", "Common Laye
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Data.Model", "Libraries\Entity\Ansible.Data.Model\Ansible.Data.Model.csproj", "{16828E90-4E47-4F83-81A8-9B285DA0B19A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Website.Admin", "Apps\Website\Ansible.Website.Admin\Ansible.Website.Admin.csproj", "{5AA30B00-8950-493F-8536-42B7C080AC30}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Core", "Libraries\Core\Ansible.Core\Ansible.Core.csproj", "{61B9B809-F8E3-4A72-BB56-73BAA56D44BF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing Layer", "Testing Layer", "{4150CA21-F1E2-4B59-8E7C-0F84A56A59C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Data.Entity", "Libraries\Entity\Sands.Data.Entity\Ansible.Data.Entity.csproj", "{4421600E-476E-4BEC-B5C5-7379839AA005}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Website.Admin", "Apps\Website\Ansible.Website.Admin\Ansible.Website.Admin.csproj", "{1230B3C1-4DA6-4010-90B1-5296893267BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,6 @@ Global
 		{16828E90-4E47-4F83-81A8-9B285DA0B19A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16828E90-4E47-4F83-81A8-9B285DA0B19A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16828E90-4E47-4F83-81A8-9B285DA0B19A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5AA30B00-8950-493F-8536-42B7C080AC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5AA30B00-8950-493F-8536-42B7C080AC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5AA30B00-8950-493F-8536-42B7C080AC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5AA30B00-8950-493F-8536-42B7C080AC30}.Release|Any CPU.Build.0 = Release|Any CPU
 		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,6 +45,10 @@ Global
 		{4421600E-476E-4BEC-B5C5-7379839AA005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4421600E-476E-4BEC-B5C5-7379839AA005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4421600E-476E-4BEC-B5C5-7379839AA005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1230B3C1-4DA6-4010-90B1-5296893267BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1230B3C1-4DA6-4010-90B1-5296893267BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1230B3C1-4DA6-4010-90B1-5296893267BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1230B3C1-4DA6-4010-90B1-5296893267BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,9 +56,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0F41BB14-6843-4CA8-AAC3-C256C26EC0E3} = {78447B01-1103-4772-9C60-FAB07E887EE4}
 		{16828E90-4E47-4F83-81A8-9B285DA0B19A} = {1AD53BAA-1434-4A43-BFF7-575DF456EF26}
-		{5AA30B00-8950-493F-8536-42B7C080AC30} = {4F1865B4-B7D7-4B70-962D-E263A75CD1E8}
 		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF} = {6D391894-BEF8-40B0-BAAD-2105DDCEDE46}
 		{4421600E-476E-4BEC-B5C5-7379839AA005} = {1AD53BAA-1434-4A43-BFF7-575DF456EF26}
+		{1230B3C1-4DA6-4010-90B1-5296893267BB} = {4F1865B4-B7D7-4B70-962D-E263A75CD1E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C38B93E6-A61D-447A-8BD6-A8C71B321498}

@@ -1,0 +1,9 @@
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\bin\Debug\netcoreapp2.0\Ansible.Data.Model.deps.json
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\bin\Debug\netcoreapp2.0\Ansible.Data.Model.dll
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\bin\Debug\netcoreapp2.0\Ansible.Data.Model.pdb
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\netcoreapp2.0\Ansible.Data.Model.csprojAssemblyReference.cache
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\netcoreapp2.0\Ansible.Data.Model.csproj.CoreCompileInputs.cache
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\netcoreapp2.0\Ansible.Data.Model.AssemblyInfoInputs.cache
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\netcoreapp2.0\Ansible.Data.Model.AssemblyInfo.cs
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\netcoreapp2.0\Ansible.Data.Model.dll
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Model\obj\Debug\netcoreapp2.0\Ansible.Data.Model.pdb

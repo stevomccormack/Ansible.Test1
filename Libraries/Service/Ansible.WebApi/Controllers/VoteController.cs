@@ -1,78 +1,141 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Ansible.Data.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Ansible.Data.Model;
+using Ansible.Services.Interfaces;
+using Microsoft.AspNet.OData;
+using Microsoft.EntityFrameworkCore;
+using TrackableEntities.Common.Core;
+using Urf.Core.Abstractions;
 
 namespace Ansible.WebApi.Controllers
 {
-    [Route("api/[controller]")]
     [Produces("application/json")]
     public class VoteController : ControllerBase
     {
-        private readonly AnsibleDbContext _context;
+        #region Declarations
 
-        public VoteController(AnsibleDbContext context)
+        private readonly IVoteService _voteService;
+        private readonly IUnitOfWork _unitOfWork;
+
+        #endregion
+
+        #region Constructors
+
+        public VoteController(
+            IVoteService voteService,
+            IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _voteService = voteService;
+            _unitOfWork = unitOfWork;
         }
 
-        // GET api/vote
-        /// <summary>
-        /// Get all votes
-        /// </summary>
-        /// <returns>All votes with HTTP200(Success)</returns>
-        [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<Vote>), 200)]
-        public IActionResult Get()
+        #endregion
+
+        #region Methods
+
+        #region Query Operations (CQRS)
+
+        // GET api/Vote
+        public async Task<IActionResult> Get()
         {
-            var votes = _context.Votes.ToList();
+            var votes = await _voteService.Query().SelectAsync();
+            if (votes == null)
+                return NotFound();
+
             return Ok(votes);
         }
 
-        // GET api/vote/5
-        /// <summary>
-        /// Get vote by id
-        /// </summary>
-        /// <param name="id">vote id</param>
-        /// <returns>The specified <code>Vote</code> with HTTP200(Success), otherwise returns HTTP404 (NotFound)</returns>
-        [HttpGet("{id}")]
-        [ProducesResponseType(typeof(Vote), 200)]
-        [ProducesResponseType(404)]
-        public IActionResult Get(int id)
+        // GET api/Vote/37
+        public async Task<IActionResult> Get(int id)
         {
-            var vote = _context.Votes.FirstOrDefault(x => x.VoteId == id);
-            if (vote == null)
-            {
-                return NotFound();
-            }
-
-            return new ObjectResult(vote);
-        }
-
-        // POST api/vote
-        /// <summary>
-        /// Creates a new vote
-        /// </summary>
-        /// <param name="vote">vote to add</param>
-        /// <returns>HTTP200 for successful creation (includes location for get), otherwise returns HTTP400 (Bad Request)</returns>
-        [HttpPost]
-        public IActionResult Post([FromBody] Vote vote)
-        {
-            if (vote == null)
-            {
-                return BadRequest();
-            }
-
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
+
+            var vote = await _voteService.FindAsync(id);
+            if (vote == null)
+                return NotFound();
+
+            return Ok(vote);
+        }
+
+        #endregion
+
+        #region Command Operations (CQRS)
+
+        // PUT api/Vote/37
+        public async Task<IActionResult> Put(int id, [FromBody] Vote vote)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (id != vote.VoteId)
+                return BadRequest();
+
+            _voteService.Update(vote);
+
+            try
+            {
+                await _unitOfWork.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!await _voteService.ExistsAsync(id))
+                    return NotFound();
+                throw;
             }
 
-            _context.Votes.Add(vote);
-            return CreatedAtAction("GetById", new { id = vote.VoteId }, vote);
+            return NoContent();
         }
+
+        // PATCH, MERGE api/Vote/37
+        [AcceptVerbs("PATCH", "MERGE")]
+        public async Task<IActionResult> Patch(int id, [FromBody] Delta<Vote> product)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var entity = await _voteService.FindAsync(id);
+            if (entity == null)
+                return NotFound();
+
+            product.Patch(entity);
+            _voteService.Update(entity);
+
+            try
+            {
+                await _unitOfWork.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!await _voteService.ExistsAsync(id))
+                    return NotFound();
+                throw;
+            }
+            return Ok(entity);
+        }
+
+        // DELETE api/Vote(37)
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var result = await _voteService.DeleteAsync(id);
+            if (!result)
+                return NotFound();
+
+            await _unitOfWork.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        #endregion
+
+        #endregion
     }
 }

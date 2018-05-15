@@ -6,3 +6,14 @@
 /.vs/Ansible.Test1/v15
 /.vs/config
 /.vs/Ansible.Test1/DesignTimeBuild
+/Apps/Website/Ansible.Website.Admin
+/packages
+/Testing/Ansible.Test.Repository/bin/Debug/netcoreapp2.0
+/Testing/Ansible.Test.Repository/obj
+/Testing/Ansible.Test.Services/bin/Debug/netcoreapp2.0
+/Testing/Ansible.Test.Services/obj
+/Testing/Ansible.Test.WebApi/bin/Debug/netcoreapp2.0
+/Testing/Ansible.Test.WebApi/obj
+/Libraries/Repository/Ansible.Data.Repository/obj
+/Libraries/Repository/Ansible.Data.Repository/bin/Debug/netcoreapp2.0
+/Libraries/Service/Ansible.Services/obj

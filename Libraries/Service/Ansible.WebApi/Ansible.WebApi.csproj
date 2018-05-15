@@ -7,11 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Compile Remove="Controllers\**" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="Controllers\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="Controllers\**" />
+    <None Remove="wwwroot\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="7.0.0-beta2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,7 +30,7 @@
     <ProjectReference Include="..\..\Core\Ansible.Core\Ansible.Core.csproj" />
     <ProjectReference Include="..\..\Entity\Ansible.Data.Entity\Ansible.Data.Entity.csproj" />
     <ProjectReference Include="..\..\Entity\Ansible.Data.Model\Ansible.Data.Model.csproj" />
-    <ProjectReference Include="..\..\Entity\Sands.Data.Entity\Ansible.Data.Entity.csproj" />
+    <ProjectReference Include="..\Ansible.Services\Ansible.Services.csproj" />
   </ItemGroup>
 
 </Project>

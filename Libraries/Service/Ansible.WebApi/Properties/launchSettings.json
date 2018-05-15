@@ -11,7 +11,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/votes",
+      "launchUrl": "odata/Vote?$skip=2&$top=10",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -19,7 +19,7 @@
     "WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/vote",
+      "launchUrl": "odata/Vote?$skip=2&$top=10",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="URF.Core.Abstractions" Version="1.0.0-rc2" />
+    <PackageReference Include="URF.Core.EF" Version="1.0.0-rc2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Entity\Ansible.Data.Entity\Ansible.Data.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

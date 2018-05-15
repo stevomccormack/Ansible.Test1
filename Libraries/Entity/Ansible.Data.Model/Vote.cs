@@ -1,9 +1,10 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using URF.Core.EF.Trackable;
 
 namespace Ansible.Data.Model
 {
-    public class Vote
+    public partial class Vote : Entity
     {
         #region Constructors
 
@@ -51,6 +52,10 @@ namespace Ansible.Data.Model
         [DataType(DataType.Text)]
         public int Age { get; set; }
 
+        [Required]
+        [Display(Name = "Is Valid")]
+        public bool IsValid { get; set; }
+
         #endregion
 
         #region IAuditBy Properties
@@ -78,7 +83,6 @@ namespace Ansible.Data.Model
         public string ModifiedBy { get; set; }
 
         #endregion
-
 
         #region Static Helpers
 

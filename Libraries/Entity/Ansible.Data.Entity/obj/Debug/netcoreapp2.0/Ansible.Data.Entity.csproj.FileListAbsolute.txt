@@ -17,12 +17,8 @@ E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Sands.Dat
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\bin\Debug\netcoreapp2.0\Ansible.Data.Entity.deps.json
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\bin\Debug\netcoreapp2.0\Ansible.Data.Entity.dll
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\bin\Debug\netcoreapp2.0\Ansible.Data.Entity.pdb
-E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\bin\Debug\netcoreapp2.0\Ansible.Core.dll
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\bin\Debug\netcoreapp2.0\Ansible.Data.Model.dll
-E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\bin\Debug\netcoreapp2.0\Ansible.Data.Model.pdb
-E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\bin\Debug\netcoreapp2.0\Ansible.Core.pdb
-E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\obj\Debug\netcoreapp2.0\Ansible.Data.Entity.csprojAssemblyReference.cache
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\obj\Debug\netcoreapp2.0\Ansible.Data.Entity.csproj.CoreCompileInputs.cache
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Entity\Ansible.Data.Entity\obj\Debug\netcoreapp2.0\Ansible.Data.Entity.AssemblyInfoInputs.cache

@@ -1,5 +1,6 @@
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Core\Ansible.Core\bin\Debug\Ansible.Core.dll
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Core\Ansible.Core\bin\Debug\Ansible.Core.pdb
+E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Core\Ansible.Core\obj\Debug\Ansible.Core.csprojAssemblyReference.cache
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Core\Ansible.Core\obj\Debug\Ansible.Core.csproj.CoreCompileInputs.cache
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Core\Ansible.Core\obj\Debug\Ansible.Core.dll
 E:\Steve McCormack\Workspaces\GitHub\Ansible\Ansible1\Libraries\Core\Ansible.Core\obj\Debug\Ansible.Core.pdb

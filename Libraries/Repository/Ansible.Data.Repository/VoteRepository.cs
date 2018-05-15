@@ -37,19 +37,6 @@ namespace Ansible.Data.Repository
 
         #region Implements IVoteCommand
 
-        public async Task<bool> SetModifiedDateTime( int id, DateTimeOffset modifiedDateTime )
-        {
-            var entity = await FindAsync(id);
-            if (entity == null)
-                return false;
-
-            entity.ModifiedDateUtc = modifiedDateTime;
-            entity.TrackingState = TrackingState.Modified;
-
-            Update(entity);
-            return true;
-        }
-
         public async Task<bool> SetIsValid( int id, bool isValid )
         {
             var entity = await FindAsync(id);

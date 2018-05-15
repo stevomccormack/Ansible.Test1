@@ -38,12 +38,6 @@ namespace Ansible.Data.Entity
 
     public interface IVoteCommandSet
     {
-        #region Set Date Colummns
-
-        Task<bool> SetModifiedDateTime(int id, DateTimeOffset modifiedDateTime);
-
-        #endregion
-
         #region Set Bit Colummns
 
         Task<bool> SetIsValid(int id, bool isValid);

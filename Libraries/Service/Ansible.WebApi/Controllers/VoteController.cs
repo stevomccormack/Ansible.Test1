@@ -41,7 +41,7 @@ namespace Ansible.WebApi.Controllers
         #region Query Operations (CQRS)
 
         // GET api/Vote
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Index()
         {
             var votes = await _voteService.Query().SelectAsync();
             if (votes == null)
@@ -51,7 +51,7 @@ namespace Ansible.WebApi.Controllers
         }
 
         // GET api/Vote/37
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

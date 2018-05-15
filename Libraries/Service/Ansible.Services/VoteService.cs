@@ -35,11 +35,6 @@ namespace Ansible.Services
 
         #region Implements IVoteCommand
 
-        public async Task<bool> SetModifiedDateTime(int id, DateTimeOffset modifiedDateTime)
-        {
-            return await ((IVoteRepository)Repository).SetModifiedDateTime(id, modifiedDateTime);
-        }
-
         public async Task<bool> SetIsValid(int id, bool isValid)
         {
             return await ((IVoteRepository)Repository).SetIsValid(id, isValid);

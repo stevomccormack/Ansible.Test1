@@ -86,7 +86,7 @@ namespace Ansible.WebApi
             app.UseMvc(routeBuilder =>
             {
                 //api route
-                //routeBuilder.MapRoute("default", "api/{controller=Vote}/{action=Get}/{id?}");
+                //routeBuilder.MapRoute("default", "api/{controller=Vote}/{action=Index}/{id?}");
 
                 //odata route
                 routeBuilder.Select().Expand().Filter().OrderBy().MaxTop(1000).Count();

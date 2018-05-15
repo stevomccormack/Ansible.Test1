@@ -11,8 +11,6 @@ namespace Ansible.Data.Model
         public Vote()
         {
             VoteNumber = NewVoteNumber;
-            CreatedBy = "sa";
-            CreatedDateUtc = DateTime.UtcNow;
         }
 
         #endregion
@@ -55,32 +53,6 @@ namespace Ansible.Data.Model
         [Required]
         [Display(Name = "Is Valid")]
         public bool IsValid { get; set; }
-
-        #endregion
-
-        #region IAuditBy Properties
-
-        [Required]
-        [Display(Name = "Created Date")]
-        [DataType(DataType.DateTime)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
-        public DateTimeOffset CreatedDateUtc { get; set; }
-
-        [Required]
-        [Display(Name = "Created By")]
-        [DataType(DataType.Text)]
-        [StringLength(100, ErrorMessage = "{0} must be less than {1} characters.")]
-        public string CreatedBy { get; set; }
-
-        [Display(Name = "Modified Date")]
-        [DataType(DataType.DateTime)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
-        public DateTimeOffset? ModifiedDateUtc { get; set; }
-
-        [Display(Name = "Modified By")]
-        [DataType(DataType.Text)]
-        [StringLength(100, ErrorMessage = "{0} must be less than {1} characters.")]
-        public string ModifiedBy { get; set; }
 
         #endregion
 

@@ -12695,8 +12695,8 @@
     },
     "Ansible.Data.Entity/1.0.0": {
       "type": "project",
-      "path": "../../Entity/Sands.Data.Entity/Ansible.Data.Entity.csproj",
-      "msbuildProject": "../../Entity/Sands.Data.Entity/Ansible.Data.Entity.csproj"
+      "path": "../../Entity/Ansible.Data.Entity/Ansible.Data.Entity.csproj",
+      "msbuildProject": "../../Entity/Ansible.Data.Entity/Ansible.Data.Entity.csproj"
     },
     "Ansible.Data.Model/1.0.0": {
       "type": "project",
@@ -12709,6 +12709,7 @@
       "Ansible.Core >= 1.0.0",
       "Ansible.Data.Entity >= 1.0.0",
       "Ansible.Data.Model >= 1.0.0",
+      "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Sands.Data.Entity\\Ansible.Data.Entity.csproj",
       "Microsoft.AspNetCore.All >= 2.0.8",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -12746,6 +12747,9 @@
             "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Core\\Ansible.Core\\Ansible.Core.csproj": {
               "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Core\\Ansible.Core\\Ansible.Core.csproj"
             },
+            "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Entity\\Ansible.Data.Entity.csproj": {
+              "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Entity\\Ansible.Data.Entity.csproj"
+            },
             "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Model\\Ansible.Data.Model.csproj": {
               "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Model\\Ansible.Data.Model.csproj"
             },
@@ -12781,5 +12785,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Sands.Data.Entity\\Ansible.Data.Entity.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Sands.Data.Entity\\Ansible.Data.Entity.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

@@ -702,11 +702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Sands.Data.Entity\\Ansible.Data.Entity.csproj",
+      "projectUniqueName": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Entity\\Ansible.Data.Entity.csproj",
       "projectName": "Ansible.Data.Entity",
-      "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Sands.Data.Entity\\Ansible.Data.Entity.csproj",
+      "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Entity\\Ansible.Data.Entity.csproj",
       "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-      "outputPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Sands.Data.Entity\\obj\\",
+      "outputPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Core", "Libraries\C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing Layer", "Testing Layer", "{4150CA21-F1E2-4B59-8E7C-0F84A56A59C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Data.Entity", "Libraries\Entity\Sands.Data.Entity\Ansible.Data.Entity.csproj", "{4421600E-476E-4BEC-B5C5-7379839AA005}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Data.Entity", "Libraries\Entity\Ansible.Data.Entity\Ansible.Data.Entity.csproj", "{4421600E-476E-4BEC-B5C5-7379839AA005}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Website.Admin", "Apps\Website\Ansible.Website.Admin\Ansible.Website.Admin.csproj", "{1230B3C1-4DA6-4010-90B1-5296893267BB}"
 EndProject

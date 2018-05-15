@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\Ansible.Core\Ansible.Core.csproj" />
     <ProjectReference Include="..\Ansible.Data.Model\Ansible.Data.Model.csproj" />
   </ItemGroup>
 

@@ -4916,6 +4916,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Ansible.Core": "1.0.0",
           "Ansible.Data.Model": "1.0.0"
         },
         "compile": {
@@ -4929,6 +4930,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Ansible.Core": "1.0.0",
           "URF.Core.EF.Trackable": "1.0.0-rc2"
         },
         "compile": {
@@ -4942,6 +4944,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Ansible.Core": "1.0.0",
           "Ansible.Data.Entity": "1.0.0",
           "URF.Core.Abstractions": "1.0.0-rc2",
           "URF.Core.EF": "1.0.0-rc2"

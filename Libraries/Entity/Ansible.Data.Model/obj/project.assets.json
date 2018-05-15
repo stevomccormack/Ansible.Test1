@@ -812,6 +812,15 @@
         "runtime": {
           "lib/netstandard2.0/URF.Core.EF.Trackable.dll": {}
         }
+      },
+      "Ansible.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Ansible.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ansible.Core.dll": {}
+        }
       }
     }
   },
@@ -3001,10 +3010,16 @@
         "urf.core.ef.trackable.1.0.0-rc2.nupkg.sha512",
         "urf.core.ef.trackable.nuspec"
       ]
+    },
+    "Ansible.Core/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Ansible.Core/Ansible.Core.csproj",
+      "msbuildProject": "../../Core/Ansible.Core/Ansible.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Ansible.Core >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "URF.Core.EF.Trackable >= 1.0.0-rc2"
     ]
@@ -3038,7 +3053,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Core\\Ansible.Core\\Ansible.Core.csproj": {
+              "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Core\\Ansible.Core\\Ansible.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

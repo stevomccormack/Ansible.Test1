@@ -411,8 +411,14 @@
           "lib/netstandard2.0/URF.Core.Services.dll": {}
         }
       },
+      "Ansible.Core/1.0.0": {
+        "runtime": {
+          "Ansible.Core.dll": {}
+        }
+      },
       "Ansible.Data.Entity/1.0.0": {
         "dependencies": {
+          "Ansible.Core": "1.0.0",
           "Ansible.Data.Model": "1.0.0"
         },
         "runtime": {
@@ -421,6 +427,7 @@
       },
       "Ansible.Data.Model/1.0.0": {
         "dependencies": {
+          "Ansible.Core": "1.0.0",
           "URF.Core.EF.Trackable": "1.0.0-rc2"
         },
         "runtime": {
@@ -429,6 +436,7 @@
       },
       "Ansible.Data.Repository/1.0.0": {
         "dependencies": {
+          "Ansible.Core": "1.0.0",
           "Ansible.Data.Entity": "1.0.0",
           "URF.Core.Abstractions": "1.0.0-rc2",
           "URF.Core.EF": "1.0.0-rc2"
@@ -794,6 +802,11 @@
       "sha512": "sha512-gynIRXIflKlWs1wuI7C564o/EelyIz4NcnweDzjmrg42whOP4XYm295TVmDyBNLyR7LoS3J9fOymFb/yUUSVfw==",
       "path": "urf.core.services/1.0.0-rc2",
       "hashPath": "urf.core.services.1.0.0-rc2.nupkg.sha512"
+    },
+    "Ansible.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Ansible.Data.Entity/1.0.0": {
       "type": "project",

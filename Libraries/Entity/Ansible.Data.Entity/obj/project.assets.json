@@ -813,10 +813,20 @@
           "lib/netstandard2.0/URF.Core.EF.Trackable.dll": {}
         }
       },
+      "Ansible.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Ansible.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ansible.Core.dll": {}
+        }
+      },
       "Ansible.Data.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Ansible.Core": "1.0.0",
           "URF.Core.EF.Trackable": "1.0.0-rc2"
         },
         "compile": {
@@ -3015,6 +3025,11 @@
         "urf.core.ef.trackable.nuspec"
       ]
     },
+    "Ansible.Core/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Ansible.Core/Ansible.Core.csproj",
+      "msbuildProject": "../../Core/Ansible.Core/Ansible.Core.csproj"
+    },
     "Ansible.Data.Model/1.0.0": {
       "type": "project",
       "path": "../Ansible.Data.Model/Ansible.Data.Model.csproj",
@@ -3023,6 +3038,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Ansible.Core >= 1.0.0",
       "Ansible.Data.Model >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -3057,6 +3073,9 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Core\\Ansible.Core\\Ansible.Core.csproj": {
+              "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Core\\Ansible.Core\\Ansible.Core.csproj"
+            },
             "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Model\\Ansible.Data.Model.csproj": {
               "projectPath": "E:\\Steve McCormack\\Workspaces\\GitHub\\Ansible\\Ansible1\\Libraries\\Entity\\Ansible.Data.Model\\Ansible.Data.Model.csproj"
             }

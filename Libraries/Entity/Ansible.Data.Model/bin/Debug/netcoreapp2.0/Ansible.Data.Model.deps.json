@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.0": {
       "Ansible.Data.Model/1.0.0": {
         "dependencies": {
+          "Ansible.Core": "1.0.0",
           "URF.Core.EF.Trackable": "1.0.0-rc2"
         },
         "runtime": {
@@ -387,6 +388,11 @@
         "runtime": {
           "lib/netstandard2.0/URF.Core.EF.Trackable.dll": {}
         }
+      },
+      "Ansible.Core/1.0.0": {
+        "runtime": {
+          "Ansible.Core.dll": {}
+        }
       }
     }
   },
@@ -731,6 +737,11 @@
       "sha512": "sha512-3w2Kld72Cm575LLeUA5i8VkTbua5NNAMv2qX8zWgUBxWmHtApO09I8Y0no8h7o01wOp6TkvPZG3E5n0b3wPfdw==",
       "path": "urf.core.ef.trackable/1.0.0-rc2",
       "hashPath": "urf.core.ef.trackable.1.0.0-rc2.nupkg.sha512"
+    },
+    "Ansible.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services Layer", "Services 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Layer", "Data Layer", "{1AD53BAA-1434-4A43-BFF7-575DF456EF26}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI Layer", "UI Layer", "{4F1865B4-B7D7-4B70-962D-E263A75CD1E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation (UI) Layer", "Presentation (UI) Layer", "{4F1865B4-B7D7-4B70-962D-E263A75CD1E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Layer", "Common Layer", "{6D391894-BEF8-40B0-BAAD-2105DDCEDE46}"
 EndProject
@@ -19,19 +19,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing Layer", "Testing La
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Data.Entity", "Libraries\Entity\Ansible.Data.Entity\Ansible.Data.Entity.csproj", "{4421600E-476E-4BEC-B5C5-7379839AA005}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Website.Admin", "Apps\Website\Ansible.Website.Admin\Ansible.Website.Admin.csproj", "{1230B3C1-4DA6-4010-90B1-5296893267BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Services", "Libraries\Service\Ansible.Services\Ansible.Services.csproj", "{B0470F47-FC46-4315-A60A-27EEDC96E550}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Services", "Libraries\Service\Ansible.Services\Ansible.Services.csproj", "{B0470F47-FC46-4315-A60A-27EEDC96E550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Data.Repository", "Libraries\Repository\Ansible.Data.Repository\Ansible.Data.Repository.csproj", "{08EE9FBC-E4A1-4EC0-B136-A074085FF730}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Data.Repository", "Libraries\Repository\Ansible.Data.Repository\Ansible.Data.Repository.csproj", "{08EE9FBC-E4A1-4EC0-B136-A074085FF730}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Data.Model", "Libraries\Entity\Ansible.Data.Model\Ansible.Data.Model.csproj", "{2AA5B8FA-49D3-429E-BBD2-39B6722BBCB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Data.Model", "Libraries\Entity\Ansible.Data.Model\Ansible.Data.Model.csproj", "{2AA5B8FA-49D3-429E-BBD2-39B6722BBCB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Test.WebApi", "Testing\Ansible.Test.WebApi\Ansible.Test.WebApi.csproj", "{4E91C5D8-FD75-4500-8B84-7117FE9BC12A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Test.WebApi", "Testing\Ansible.Test.WebApi\Ansible.Test.WebApi.csproj", "{4E91C5D8-FD75-4500-8B84-7117FE9BC12A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Test.Repository", "Testing\Ansible.Test.Repository\Ansible.Test.Repository.csproj", "{1B7473FD-9B74-4D24-AF7A-30F425B0E93D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Test.Repository", "Testing\Ansible.Test.Repository\Ansible.Test.Repository.csproj", "{1B7473FD-9B74-4D24-AF7A-30F425B0E93D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ansible.Test.Services", "Testing\Ansible.Test.Services\Ansible.Test.Services.csproj", "{3B3D7585-17F4-4274-9B70-6DCCE219B7CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ansible.Test.Services", "Testing\Ansible.Test.Services\Ansible.Test.Services.csproj", "{3B3D7585-17F4-4274-9B70-6DCCE219B7CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,10 +49,6 @@ Global
 		{4421600E-476E-4BEC-B5C5-7379839AA005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4421600E-476E-4BEC-B5C5-7379839AA005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4421600E-476E-4BEC-B5C5-7379839AA005}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1230B3C1-4DA6-4010-90B1-5296893267BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1230B3C1-4DA6-4010-90B1-5296893267BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1230B3C1-4DA6-4010-90B1-5296893267BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1230B3C1-4DA6-4010-90B1-5296893267BB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B0470F47-FC46-4315-A60A-27EEDC96E550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0470F47-FC46-4315-A60A-27EEDC96E550}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0470F47-FC46-4315-A60A-27EEDC96E550}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,7 +81,6 @@ Global
 		{0F41BB14-6843-4CA8-AAC3-C256C26EC0E3} = {78447B01-1103-4772-9C60-FAB07E887EE4}
 		{61B9B809-F8E3-4A72-BB56-73BAA56D44BF} = {6D391894-BEF8-40B0-BAAD-2105DDCEDE46}
 		{4421600E-476E-4BEC-B5C5-7379839AA005} = {1AD53BAA-1434-4A43-BFF7-575DF456EF26}
-		{1230B3C1-4DA6-4010-90B1-5296893267BB} = {4F1865B4-B7D7-4B70-962D-E263A75CD1E8}
 		{B0470F47-FC46-4315-A60A-27EEDC96E550} = {78447B01-1103-4772-9C60-FAB07E887EE4}
 		{08EE9FBC-E4A1-4EC0-B136-A074085FF730} = {1AD53BAA-1434-4A43-BFF7-575DF456EF26}
 		{2AA5B8FA-49D3-429E-BBD2-39B6722BBCB1} = {1AD53BAA-1434-4A43-BFF7-575DF456EF26}

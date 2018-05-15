@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\Ansible.Core\Ansible.Core.csproj" />
     <ProjectReference Include="..\..\Entity\Ansible.Data.Entity\Ansible.Data.Entity.csproj" />
   </ItemGroup>
 

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>@ViewData["Title"] - Ansible React Website for WebAPI</title>
+  <base href="~/" />
+
+  <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+  <environment exclude="Development">
+    <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+  </environment>
+
+
+  <link rel="dns-prefetch" href="//maps.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  
+  <link rel="stylesheet" id="gglcptch-css" href="https://www.ansibleww.com/wp-content/plugins/google-captcha/css/gglcptch.css?ver=1.36" type="text/css" media="all">
+  <link rel="stylesheet" id="instant-css" href="https://www.ansibleww.com/wp-content/plugins/simple-instant-search/css/instant.css?ver=4.9.5" type="text/css" media="all">
+  <link rel="stylesheet" id="mubaloo-css" href="https://www.ansibleww.com/wp-content/themes/mubaloo/css/style.css?ver=4.9.5" type="text/css" media="all">
+  <link rel="stylesheet" id="mubaloo-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C700%2C300%2C600%2C400&amp;ver=4.9.5" type="text/css" media="all">
+  
+  <link rel="icon" href="https://www.ansibleww.com/wp-content/uploads/2016/03/cropped-Ansible-FavIcon-512x512-32x32.png" sizes="32x32">
+  <link rel="icon" href="https://www.ansibleww.com/wp-content/uploads/2016/03/cropped-Ansible-FavIcon-512x512-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="https://www.ansibleww.com/wp-content/uploads/2016/03/cropped-Ansible-FavIcon-512x512-180x180.png">
+  <meta name="msapplication-TileImage" content="https://www.ansibleww.com/wp-content/uploads/2016/03/cropped-Ansible-FavIcon-512x512-270x270.png">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.ansibleww.com/wp-content/themes/mubaloo/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.ansibleww.com/wp-content/themes/mubaloo/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.ansibleww.com/wp-content/themes/mubaloo/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.ansibleww.com/wp-content/themes/mubaloo/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.ansibleww.com/wp-content/themes/mubaloo/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.ansibleww.com/wp-content/themes/mubaloo/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.ansibleww.com/wp-content/themes/mubaloo/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.ansibleww.com/wp-content/themes/mubaloo/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.ansibleww.com/wp-content/themes/mubaloo/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="https://www.ansibleww.com/wp-content/themes/mubaloo/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.ansibleww.com/wp-content/themes/mubaloo/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="https://www.ansibleww.com/wp-content/themes/mubaloo/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://www.ansibleww.com/wp-content/themes/mubaloo/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://www.ansibleww.com/wp-content/themes/mubaloo/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.ansibleww.com/wp-content/themes/mubaloo/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="https://www.ansibleww.com/wp-content/themes/mubaloo/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+  
+  <header>
+
+    <div class="logo-container"><img src="https://www.ansibleww.com/wp-content/themes/mubaloo/images/logo.svg" /></div>
+
+    <h1>Vote Administration</h1>
+    <p class="lead">Built using React this site interfaces with the Vote Web API to manage the vote domain model.</p>
+    <hr />
+
+  </header>
+
+  @RenderBody()
+
+  <script src="~/dist/vendor.js" asp-append-version="true"></script>
+  @RenderSection( "scripts", required: false )
+
+</body>
+</html>
